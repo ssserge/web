@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Калькулятор</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header id="webLogo">
+            <a href="index.html">
+                <img src="webLogo.png" alt="Изображение" width="180" />
+            </a>
+            <h1>Основы Web-технологий</h1>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html">Главная</a></li>
+                    <li id="tech">
+                        <a href="technologies.html">Web-технологии</a>
+                        <ul id="navigation1">
+                            <li><a href="html5.html">HTML5</a></li>
+                            <li><a href="css3.html">CSS3</a></li>
+                            <li><a href="javaScript.html">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="calculator.html">Калькулятор</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                </ul>
+            </nav>
+        </header>
+            <form class="meedle" name="calc">
+                <table class="calc" border="1">
+                    <tr>
+                        <td colspan="5">
+                            <input type="text" name="answer" />
+                        </td>                    
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="7" value="7" />
+                        </td>
+                        <td>
+                            <input type="button" name="8" value="8" />
+                        </td>
+                        <td>
+                            <input type="button" name="9" value="9" />
+                        </td>
+                        <td>
+                            <input type="button" name="/" value="/" />
+                        </td>
+                        <td>
+                            <input type="button" name="C" value="C" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="4" value="4" />
+                        </td>
+                        <td>
+                            <input type="button" name="5" value="5" />
+                        </td>
+                        <td>
+                            <input type="button" name="6" value="6" />
+                        </td>
+                        <td>
+                            <input type="button" name="*" value="*" />
+                        </td>
+                        <td>
+                            <input type="button" name="&plusmn;" value="&plusmn;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="1" value="1" />
+                        </td>
+                        <td>
+                            <input type="button" name="2" value="2" />
+                        </td>
+                        <td>
+                            <input type="button" name="3" value="3" />
+                        </td>
+                        <td>
+                            <input type="button" name="-" value="-" />
+                        </td>
+                        <td rowspan="2">
+                            <input type="button" name="=" value="=" />
+                        </td>                   
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" name="0" value="0" />
+                        </td>
+                        <td>
+                            <input type="button" name="." value="." />
+                        </td>
+                        <td>
+                            <input type="button" name="+" value="+" />
+                        </td>                    
+                    </tr>
+                </table>
+            </form>
+        <footer>
+            <address>
+                <a id="mail" href="mailto:mail@mail">Пишите: mail@mail</a>
+            </address>
+            <div>&copy; Фамилия И.О., год</div>
+        </footer>
+    </body>
+</html>
