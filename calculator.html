@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Калькулятор</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header id="webLogo">
+            <a href="index.html">
+                <img id="png" src="webLogo.png" alt="Изображение" width="180" />
+            </a>
+            <h1>Основы Web-технологий</h1>
+            <nav class="navigation">
+                <ul id="navigation">
+                    <li><a href="index.html">Главная</a></li>
+                    <li id="tech">
+                        <a href="technologies.html">Web-технологии</a>
+                        <ul id="navigation1">
+                            <li><a href="html5.html">HTML5</a></li>
+                            <li><a href="css3.html">CSS3</a></li>
+                            <li><a href="javaScript.html">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="calculator.html">Калькулятор</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                </ul>
+            </nav>
+        </header>
+            <form class="meedle" name="calc">
+                <table class="calc" border="1">
+                    <tr>
+                        <td class="text" colspan="5">
+                            <input type="text" name="res"/>
+                        </td>                    
+                    </tr>
+                    <tr>
+                        <td>
+                            <button name="7" type="submit" value="7">7</button>
+                        </td>
+                        <td>
+                            <button name="8" type="submit" value="8">8</button>
+                        </td>
+                        <td>
+                            <button name="9" type="submit" value="9">9</button>
+                        </td>
+                        <td>
+                            <button name="/" type="submit" value="/">/</button>
+                        </td>
+                        <td>
+                            <button name="C" type="submit" value="C">C</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button name="4" type="submit" value="4">4</button>
+                        </td>
+                        <td>
+                            <button name="5" type="submit" value="5">5</button>
+                        </td>
+                        <td>
+                            <button name="6" type="submit" value="6">6</button>
+                        </td>
+                        <td>
+                            <button name="*" type="submit" value="*">*</button>
+                        </td>
+                        <td>
+                            <button name="&plusmn;" type="submit" value="&plusmn;">&plusmn;</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button name="1" type="submit" value="1">1</button>
+                        </td>
+                        <td>
+                            <button name="2" type="submit" value="2">2</button>
+                        </td>
+                        <td>
+                            <button name="3" type="submit" value="3">3</button>
+                        </td>
+                        <td>
+                            <button name="-" type="submit" value="-">-</button>
+                        </td>
+                        <td rowspan="2" id="row2">
+                            <button class="row2" name="=" type="submit" value="=">=</button>
+                        </td>                   
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button name="0" type="submit" value="0">0</button>
+                        </td>
+                        <td>
+                            <button name="." type="submit" value=".">.</button>
+                        </td>
+                        <td>
+                            <button name="+" type="submit" value="+">+</button>
+                        </td>                    
+                    </tr>
+                </table>
+            </form>
+        <footer class="foot">
+            <address>
+                <a id="mail" href="mailto:mail@mail">Пишите: mail@mail</a>
+            </address>
+            <div>&copy; Фамилия И.О., год</div>
+        </footer>
+    </body>
+</html>
