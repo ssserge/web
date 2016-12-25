@@ -11,7 +11,7 @@ document.getElementById("result").onclick = function () {
     if (document.getElementById("radio7").checked) {
         result += 1;
     } 
-    if (document.getElementById("radio11").checked) {
+    if (document.getElementById("radio12").checked) {
         result += 1;        
     }
     
