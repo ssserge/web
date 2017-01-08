@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+        <link rel="stylesheet" href="bootstrap.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <header id="webLogo">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <a href="index.html" class="thumbnail">
+                                    <img src="webLogo.png" alt="Изображение" width="180" />
+                                </a>
+                            </div>
+                            <div class="col-xs-9">
+                                <h1>Основы Web-технологий</h1>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                     <span class="icon-bar"></span>
+                                     <span class="icon-bar"></span>
+                                     <span class="icon-bar"></span>
+                                </button>
+                                <a href="index.html" class="navbar-brand">Главная</a>
+                            </div>
+                            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <!-- <li><a href="index.html">Главная</a></li> !-->
+                                    <li><a href="technologies.html">Web-технологии</a></li>
+                                        <li class="active" class="dropdown">
+                                            <a data-toggle="dropdown"><span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="html5.html">HTML5</a></li>
+                                                <li><a href="css3.html">CSS3</a></li>
+                                                <li><a href="javaScript.html">JavaScript</a></li>
+                                            </ul>
+                                        </li>
+                                    <li><a href="calculator.html">Калькулятор</a></li>
+                                    <li><a href="test.html">Тест</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </header>
+                    <article class="text-justify">
+                        <h2>CSS3</h2>
+                        <p><em><b>CSS</b></em> (англ. Cascading Style Sheets — каскадные таблицы стилей) — <dfn>формальный язык</dfn> описания внешнего вида документа, написанного с использованием <i>языка разметки</i>.</p>
+                        <p>Преимущественно используется как средство описания, оформления внешнего вида <i>Web-страниц</i>, написанных с помощью <i>языков разметки</i> HTML и XHTML, но может также применяться к любым <i>XML-документам</i>, например, к SVG или XUL.</p>
+                    </article>
+                    <footer class="col-xs-12 text-center">
+                        <address>
+                            <a href="mailto:mail@mail">Пишите: mail@mail</a>
+                        </address>
+                        <div>&copy; Фамилия И.О., год</div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="jquery-3.1.1.js"></script>
+        <script src="bootstrap.js"></script>
+    </body>
+</html>

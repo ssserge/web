@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Тест</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+        <link rel="stylesheet" href="bootstrap.css" />        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <header id="webLogo">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <a href="index.html" class="thumbnail">
+                                    <img src="webLogo.png" alt="Изображение" width="180" />
+                                </a>
+                            </div>
+                            <div class="col-xs-9">
+                                <h1>Основы Web-технологий</h1>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                     <span class="icon-bar"></span>
+                                     <span class="icon-bar"></span>
+                                     <span class="icon-bar"></span>
+                                </button>
+                                <a href="index.html" class="navbar-brand">Главная</a>
+                            </div>
+                            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <!-- <li><a href="index.html">Главная</a></li> !-->
+                                    <li><a href="technologies.html">Web-технологии</a></li>
+                                        <li class="active" class="dropdown">
+                                            <a data-toggle="dropdown"><span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="html5.html">HTML5</a></li>
+                                                <li><a href="css3.html">CSS3</a></li>
+                                                <li><a href="javaScript.html">JavaScript</a></li>
+                                            </ul>
+                                        </li>
+                                    <li><a href="calculator.html">Калькулятор</a></li>
+                                    <li><a href="test.html">Тест</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </header>
+                    <form name="test">
+                        <p>Какой тег предназначен для создания ссылок:<br />
+                        <input type="radio" name="a" id="radio1"><label for="radio1">&lt;a&gt;</label><br />
+                        <input type="radio" name="a" id="radio2"><label for="radio2">&lt;a /&gt;</label><br />
+                        <input type="radio" name="a" id="radio3"><label for="radio3">&lt;ref&gt;</label><br />
+                        <input type="radio" name="a" id="radio4"><label for="radio4">&lt;ref /&gt;</label></p>           
+                        <p>Какой тег предназначен для создания нумерованного списка:<br />
+                        <input type="radio" name="ol" id="radio5"><label for="radio5">&lt;li&gt;</label><br />
+                        <input type="radio" name="ol" id="radio6"><label for="radio6">&lt;dl&gt;</label><br />
+                        <input type="radio" name="ol" id="radio7"><label for="radio7">&lt;ol&gt;</label><br />
+                        <input type="radio" name="ol" id="radio8"><label for="radio8">&lt;ul&gt;</label></p>
+                        <p>Какой тег предназначен для передачи служебной информации браузеру:<br />
+                        <input type="radio" name="meta" id="radio9"><label for="radio9">&lt;info&gt;</label><br />
+                        <input type="radio" name="meta" id="radio10"><label for="radio10">&lt;info /&gt;</label><br />
+                        <input type="radio" name="meta" id="radio11"><label for="radio11">&lt;meta&gt;</label><br />
+                        <input type="radio" name="meta" id="radio12"><label for="radio12">&lt;meta /&gt;</label></p>
+                        <p>Какие теги используются при создании таблицы:<br />
+                        <input type="checkbox" name="table" id="checkbox1"><label for="checkbox1">&lt;bodyt&gt;</label><br />
+                        <input type="checkbox" name="table" id="checkbox2"><label for="checkbox2">&lt;td&gt;</label><br />
+                        <input type="checkbox" name="table" id="checkbox3"><label for="checkbox3">&lt;caption&gt;</label><br />
+                        <input type="checkbox" name="table" id="checkbox4"><label for="checkbox4">&lt;column&gt;</label></p>
+                        <p>Какие атрибуты используются при создании форм:<br />
+                        <input type="checkbox" name="form" id="checkbox5"><label for="checkbox5">autocomplete</label><br />
+                        <input type="checkbox" name="form" id="checkbox6"><label for="checkbox6">action</label><br />
+                        <input type="checkbox" name="form" id="checkbox7"><label for="checkbox7">charset</label><br />
+                        <input type="checkbox" name="form" id="checkbox8"><label for="checkbox8">validate</label></p>
+                        <button name="result" type="button" id="result" class="btn btn-info" value="Результат" data-toggle="modal" data-target="#myModal">Результат</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <!--<button type="button" class="close" data-dismiss="modal">×</button>!-->
+                                        <h4>Ваш результат:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p id="modalAlert"></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" id="close" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <footer class="col-xs-12 text-center">
+                        <address>
+                            <a href="mailto:mail@mail">Пишите: mail@mail</a>
+                        </address>
+                        <div>&copy; Фамилия И.О., год</div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <audio id="myaudio">
+            <source src="9810_1358861910.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="myaudio2">
+            <source src="sound search.mp3" type="audio/mpeg">
+        </audio>
+        <script src="jquery-3.1.1.js"></script>                
+        <script src="bootstrap.js"></script>
+        <script src="test.js"></script>
+    </body>
+</html>
